@@ -1,0 +1,62 @@
+
+//Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+$grid-width: (
+  xs: 360px,
+  sm: 520px,
+  md: 720px,
+  lg: 880px,
+  xl: 1120px,
+  xxl: 1200px
+);
+
+// Colors
+
+$primary-color: rgba(254,237,209);
+$strong-primary-color: rgba(255,71,35);
+$strong-primary-color-box: rgba(255,71,35,0.3);
+$light-primary-color: #edc690;  
+$superlight-primary-color: #f4e1c5;
+$light-secondary-color: rgb(245, 222, 117);
+
+$secondary-color: #d1cd04;
+
+$light-secondary-color: #CBF3F0;
+
+$black-color: #111;
+$white-color: #edebeb;
+
+$overlay-color: rgba(0, 0, 0, 0.6);
+
+$success-color: #2a892a;
+$danger-color: #d02121;
+$warning-color: #c1aa17;
+
+//Layout
+$body-bg-color: url(/src/images/index1.png);
+$navbar-bg-color: $primary-color;
+
+//Grid
+$grid-columns: 12;
+
+//Spacings
+$spacings: (
+    m: margin,
+    mt: margin-top,
+    mb: margin-bottom,
+    ml: margin-left,
+    mr: margin-right,
+    p: padding,
+    pt: padding-top,
+    pb: padding-bottom,
+    pl: padding-left,
+    pr: padding-right,
+);

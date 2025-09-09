@@ -1,0 +1,79 @@
+@use "sass:map";
+@use "../utils/variables" as *;
+
+.navbar__container {
+    align-items: center;
+    background-color: $navbar-bg-color;
+    box-shadow: 2px 2px 8px 1px $superlight-primary-color;
+    display: flex;
+    min-height: 4.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    .navbar__navigation {
+        ul {
+            margin-top: 30px ;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            li {
+                margin-left: 25px;
+                list-style: none;
+                a {
+                    font-size: 20px;
+                    text-decoration: none;
+                    color: $strong-primary-color;
+                    &:hover {
+                        color: $black-color;
+                    };
+                }
+            }
+        }
+        @media screen and (max-width: map.get($grid-breakpoints, md)) {
+            display: none;
+        }
+    }
+
+        .navbar__menu-mobile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        @media screen and (min-width: map.get($grid-breakpoints, md)) {
+        display: none;
+        }
+     
+
+
+    .navbar__menu-button {
+            background-color: transparent;
+            border: 2px solid $primary-color;
+            border-radius: 0.5rem;
+            color: $strong-primary-color;
+            padding: 0.5rem;
+            cursor: pointer;
+            &:hover {
+            color: $black-color;
+            }
+        }
+    }
+}
+
+.navbar__drawer-menu {
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        li {
+            list-style: none;
+            a {
+                font-size: 20px;
+                color: $strong-primary-color;
+                text-decoration: none;
+                &:hover {
+                    color: black;
+                };
+            }
+        }
+    }
+}

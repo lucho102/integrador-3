@@ -1,0 +1,62 @@
+@use "sass:map";
+@use "../utils/variables" as *;
+
+.modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $overlay-color;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    .modal__content {
+        background-color: $white-color;
+        color: $black-color;
+        border-radius: 1rem;
+        min-height: 40vh;
+        min-width: 40vw;
+        padding: 24px;
+        @media screen and (max-width: map.get($grid-breakpoints, md)) {
+            min-width: 94vw;
+        }
+        .modal__close {
+            background-color: transparent;
+            border: none;
+        }
+    }
+}
+.subtitle-MD{
+    color: $strong-primary-color;
+    text-shadow: 2px 2px 2px $black-color;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.product-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  gap: 1rem;
+}
+
+.product-name {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.product-price {
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.total-price {
+  font-size: 20px;
+}

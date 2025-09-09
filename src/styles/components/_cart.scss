@@ -1,0 +1,22 @@
+@use "../utils/variables" as *;
+
+.cart__container {
+    position: relative;
+    color: $strong-primary-color;
+    cursor: pointer;
+    .cart__badge {
+        border-radius: 100%;
+        background-color: $black-color;
+        color: $white-color;
+        position: absolute;
+        top: -0.5rem;
+        right: -0.5rem;
+        height: 1.25rem;
+        width: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     &:hover {
+        color: $black-color;
+}}
